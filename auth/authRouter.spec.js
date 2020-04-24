@@ -16,7 +16,7 @@ describe('register', function(){
             expect(res.status).toBe(201);
         });
     });
-    
+
     it('should return a message saying `error 500 in post register`', function(){
         return request(auth)
         .post('/register')
