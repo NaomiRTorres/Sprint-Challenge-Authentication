@@ -18,7 +18,7 @@ router.post('/register', (req, res) => {
   .catch(error => {
     console.log(error);
     res.status(500).json({
-      errorMessage: error.message
+      message: 'error 500 in post register'
     });
   });
 });
@@ -43,7 +43,7 @@ router.post('/login', (req, res) => {
   .catch(error => {
     console.log(error);
     res.status(500).json({
-      errorMessage: error.message
+      message: 'error 500 in post login'
     });
   });
 });

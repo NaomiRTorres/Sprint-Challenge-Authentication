@@ -13,4 +13,14 @@ describe('server', function() {
             });
         });
     });
+
+    describe('/', function(){
+        it('should return a message with `api: up`', function(){
+            return request(server)
+            .get('/')
+            .then(res => {
+                expect(res.body.api).toBe('up');
+            });
+        });
+    });
 });
